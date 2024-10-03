@@ -20,4 +20,4 @@ _Italica texto_
 
 ***negrita italica***
 
-![ImagenProgramación]{https://www.veronicaruiz.es/wp-content/uploads/2022/04/lenguajes.jpg}
+![Imagen Programación] {https://www.veronicaruiz.es/wp-content/uploads/2022/04/lenguajes.jpg}
