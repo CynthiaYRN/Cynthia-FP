@@ -4,6 +4,6 @@
 #### Title 4
 ##### Title 5
 
-* Bullet 1 *
-* Bullet 2 *
-* Bullet 3 *
+* Bullet 1 
+* Bullet 2 
+* Bullet 3 
