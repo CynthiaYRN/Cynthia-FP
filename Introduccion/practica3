@@ -39,7 +39,7 @@ int main()
 	//EJERCICIO 9
 	// Convertir un string a minusculas
 	string textoMayusculas = "Texto a Convertir";
-	transform(textoMayusculas.begin(), textoMayusculas.end(), textoMayusculas.begin(), toupper);
+	transform(textoMayusculas.begin(), textoMayusculas.end(), textoMayusculas.begin(), tolower);
 	
 	//EJERCICIO 10
 	// Insertar un texto dentro de otro texto
