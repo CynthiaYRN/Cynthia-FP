@@ -1,0 +1,75 @@
+#include <iostream>
+#include <string>
+#include <sstream>
+#include<algorithm>
+
+using namespace std;
+
+int main()
+{
+	
+	// EJERCICIO 4
+   // Introducir una linea completa de texto (string)
+   // cin.ignore(); // Ignorar la instrucción cin, cuando hay "cin >>" anteriores a esta linea de codigo
+	string nombreCompleto;
+	cout << "introduce tu nombre completo: ";
+	getline(cin, nombreCompleto); //Obtiene una linea completa de text0
+	cout << "tu nombre completo: " << nombreCompleto << endl;
+	
+	// EJERCICIO 5
+	// De que tamaño es un string
+	cout << "La longitud del texto es: " << nombreCompleto.length() << endl;
+
+	// EJERCICIO 6
+	// Como acceder un caracter especifico de un texto (String)
+	// [] = Operador índice
+	cout << "El primer caracter de nombre completo es: " << nombreCompleto[0] << endl;
+
+	// EJERCICIO 7
+	// Cambiar un caracter especifico en un texto (string)
+	string cambio = "Hola";
+	cambio[0] = 'h' ;
+	cout << cambio << endl;
+
+	// EJERCICIO 8
+	// Convertir un string a MAYUSCULAS 
+	string textoMinusculas = "texto a convertir";
+	transform(textoMinusculas.begin(), textoMinusculas.end(), textoMinusculas.begin(), toupper);
+
+	//EJERCICIO 9
+	// Convertir un string a minusculas
+	string textoMayusculas = "Texto a Convertir";
+	transform(textoMayusculas.begin(), textoMayusculas.end(), textoMayusculas.begin(), toupper);
+	
+	//EJERCICIO 10
+	// Insertar un texto dentro de otro texto
+	string textoPrincipal = "Jose, ";
+	textoPrincipal.insert(6, "Luis");
+	cout << textoPrincipal << endl;
+
+	// EJERCICIO 11
+	// Revertir un texto
+	string textoRevertir = "Hola, mundo!";
+	reverse(textoRevertir.begin(), textoRevertir. end());
+
+	// EJERCICIO 12
+	// Convertir un número a un string
+	int n1 = 123;
+	string numeroAtexto = to_string(n1);
+	cout << "Número com string: " << numeroAtexto << endl;
+
+	// EJERCICIO 13
+	// Convertir un string a número
+	string textoAnumero = "123";
+	int n2 = stoi(textoAnumero);
+	cout << "String como número: " << n2 << endl;
+
+
+
+
+
+
+
+
+
+}
