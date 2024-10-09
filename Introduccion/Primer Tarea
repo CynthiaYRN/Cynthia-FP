@@ -1,0 +1,112 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+int main()
+{
+	//1.1Conteste la pregunta y genere la respuesta, declare una variable tipo int que tenga el número de materias que estás cursando actualmente.
+	int numerodeMaterias = 5;
+	
+	//1.2 Declare una variable tipo int que guarde el valor del cuatrimestre que estas cursando.
+	int valorCuatrimestre = 5;
+		
+	//1.3 Declara una variable tipo string con identificador “materia”, e inicializar con el nombre de esta materia.
+	string materia = "Fundamentos de Programacion";
+		
+	//1.4 Declara una variable tipo string con identificador “cuenta”, e inicializar con el tu número de cuenta / matricula de Unitec.
+	string cuenta = "335003598";
+	
+	//1.5 Declara una variable de tipo string con identificador “nombre”, e inicializar con tu nombre(s) propio(s).
+	string nombre = "Cynthia Yareli";
+		
+	//1.7 Declara una variable de tipo string con identificador “apellidoPaterno”, e inicializar con tu apellido paterno.
+	string apellidoPaterno = "Ramírez";
+		
+	//1.12 Declara una variable de tipo string con identificador “apellidoMaterno”, e inicializar con tu apellido materno.
+	string apellidoMaterno = "Noyola";
+		
+	//1.8 Declara una variable tipo long con identificador “celular”, e inicializar con tu número celular.
+	long celular = 5519166318;
+		
+	//1.9 Declara una variable tipo long con identificador “casa”, e inicializar con tu número de casa.
+	long casa = 5592433233;
+		
+	//1.9 Declara una variable tipo string con identificador “correoQueMasUso”, e inicializar con el correo electrónico que más uses.
+		
+	string correoQueMasUso = "cynthiarn0516@gmail.com";
+	//1.10 Declara una variable tipo string con identificador “correMyUnitec”, e inicializar con el correo electrónico que tienes asignado en el Unitec.
+	string correoMyUnitec = "cynthia.ramirez35@my.unitec.edu.mx";
+	
+	//1.11 Declara una variable tipo string con identificador “carrera”, e inicializar con la carrera que cursas actualmente en la Unitec.
+	string carrera = "Diseño, Animación y Arte Digital";
+	
+	//1.12 Declara una variable tipo bool con identificador “blackboard”, e inicializar con valor true, si lo has usado anteriormente, de lo contrario inicializar con valor false.
+	bool blackboard = true;
+
+
+	// Análisis de errores de sintaxis ya corregidos.
+	// 
+	//Ejercicio 1:
+	int unNumero = 5;
+
+	//Ejercicio 2:
+	float valor = 3.14;
+
+	//Ejercicio 3:
+	double valor = 9.81;
+
+	//Ejercicio 4:
+	string letra = "AB";
+
+	//Ejercicio 5:
+	bool esVerdadero = true;
+
+	//Ejercicio 6:
+	float numero = 10.5;
+
+	//Ejercicio 7:
+	string nombre = "Juan";
+
+	//Ejercicio 8:
+	const float PI = 3.14;
+
+	//Ejercicio 9:
+	int suma = 5 + 5;
+
+	//Ejercicio 10:
+	int numero = 10;
+
+	//Ejercicio 11:
+	string numero = "diez";
+
+	//Ejercicio 12:
+	float altura = 1.75;
+
+	//Ejercicio 13:
+	char inicial = 'J';
+
+	//Ejercicio 14:
+	bool esMayor = true;
+
+	//Ejercicio 15:
+	string apellido = "Juan";
+
+	//Ejercicio 16:
+	int resultado = 5 * 5;
+
+	//Ejercicio 17:
+	double area = 3.14 * 2;
+
+	//Ejercicio 18:
+	int edad = 25;
+
+	//Ejercicio 19 :
+	float peso = 70.5f;
+
+	//Ejercicio 20:
+	int suma = 10 + 20;
+
+
+
+}
