@@ -62,31 +62,31 @@ int main()
 
 	// Ejercicio 1
 	int producto = 3 * 4;
-	cout << "Resultado 1: " << producto << endl;
+	cout << "(3 * 4): " << (3 * 4) << endl;
 
 	// Ejercicio 2
 	int division = 12 / 3;
-	cout << "Resultado 2: " << division << endl;
+	cout << "(12 / 3): " << (12 / 3) << endl;
 
 	// Ejercicio 3
 	int modulo1 = 12 % 3;
-	cout << "Resultado 3: " << modulo1 << endl;
+	cout << "(12 % 3): " << (12 % 3) << endl;
 
 	// Ejercicio 4
 	int modulo2 = 12 % 7;
-	cout << "Resultado 4: " << modulo2 << endl;
+	cout << "(12 % 7): " << (12 % 7) << endl;
 
 	// Ejercicio 5
 	double suma = 3 + 3.0;
-	cout << "Resultado 5: " << suma << endl;
+	cout << "(3 + 3.0): " << (3 + 3.0) << endl;
 
 	// Ejercicio 6
 	double division2 = 10.0 / 100.0;
-	cout << "Resultado 6: " << division2 << endl;
+	cout << "(10.0 / 100.0): " << (10.0 / 100.0) << endl;
 
 	// Ejercicio 7
 	double potencia = pow(3, 2);
-	cout << "Resultado 7: " << potencia << endl;
+	cout << "pow(3, 2): " << pow(3, 2) << endl;
 
 
 	int a = 10;
