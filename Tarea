@@ -23,8 +23,8 @@ int main()
 	int num;
 	cout << "Ingrese un numero";
 	cin >> num;
-	int potencia = 4 * 4;
-	cout << "La potencia de " << num << "es" << 16 << endl;
+	int cuadrado = 4 * 4;
+	cout << "El cuadrado de " << num << "es" << 16 << endl;
 
 	float yardas;
 	cout << "Ingrese las yardas: ";
