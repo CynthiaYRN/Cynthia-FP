@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 
 using namespace std;
 
@@ -23,14 +22,14 @@ int main()
 	int num;
 	cout << "Ingrese un numero";
 	cin >> num;
-	int cuadrado = 4 * 4;
-	cout << "El cuadrado de " << num << "es" << 16 << endl;
+	double cuadrado = num * num;
+	cout << "El cuadrado de " << num << "es" << cuadrado << endl;
 
 	float yardas;
 	cout << "Ingrese las yardas: ";
 	cin >> yardas;
 	float metros = 10 * 0.9144;
-	cout << "Número en metros: " << metros << endl;
+	cout << "Numero en metros: " << metros << endl;
 
 	float valorOriginal = 200000;
 	float porcentajeDepreciacion = 0.8;
