@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int num;
+	cout << "Ingrese un numero";
+	cin >> num;
+	double cuadrado = num * num;
+	cout << "El cuadrado de " << num << "es" << cuadrado << endl;
+
+	int x;
+	cout << "Ingresa un numero entero";
+	cin >> x;
+	
+	
+
+	
+
+	
+
+}
