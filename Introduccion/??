@@ -1,0 +1,40 @@
+	// 1. Ejercicio
+	int n1, n2;
+	cout << "n1: ";
+	cin >> n1;
+	cout << "n2: ";
+	cin >> n2;
+	cout << endl;
+	if (n1 > n2)
+	{
+		cout << "n1: ";
+	}
+	else
+	{
+		cout << "n2: ";
+		cout << endl;
+
+	}
+
+	int edad;
+	cout << "Dame tu edad: ";
+	cin >> edad;
+	cout << endl;
+	if (edad >= 18)
+	{
+		cout << "mayor de edad "
+			<< endl;
+	}
+
+    }
+	else
+	{
+	cout
+		<< "menor de edad " << endl;
+
+
+
+
+}
+
+
