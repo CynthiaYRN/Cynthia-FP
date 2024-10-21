@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int horasTrabajadas = 0;
+	cout << "Horas trabajadas : ";
+	cin >> horasTrabajadas;
+	cout << endl;
+	int horasBono = horasTrabajadas
+
+		- 40;
+	if (horasBono > 0)
+	{
+		horasBono = horasBono * 75;
+		cout << "Bono " << horasBono;
+	}
+
+}
+
+
