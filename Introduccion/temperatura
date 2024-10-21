@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int temp;
+	cout << "temperatura: ";
+	cin >> temp;
+	cout << endl;
+	if (temp < 10)
+	{
+		cout
+			<< "Hace mucho frío "
+			<< endl;
+
+	}
+	if (temp >= 10 and
+		temp <= 17)
+	{
+		cout << "frio " << endl;
+	}
+	if (temp > 17)
+	{ 
+		cout << "templado"
+			<< endl;
+	}
+}
+
+
