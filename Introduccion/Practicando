@@ -1,0 +1,43 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	// Encontrar el mayor de dos números, solicita los dos números de tipo int.
+	int n1, n2;
+	cout << "n1: ";
+	cin >> n1;
+	cout << endl;
+	cout << "n2: ";
+	cin >> n2;
+	cout << endl;
+	if (n1 > n2)
+	{
+		cout << "n1: " << n1 << endl;
+	}
+	else
+	{
+		cout << "n2: " << n2 << endl;
+	}
+
+	// Solicitar la edad de la persona y si esta es mayor de edad, escribir en pantalla “Mayor de edad” de lo contrario “Menor de edad”
+	int edad;
+	cout << "Escribe tu edad: " << endl;
+	cin >> edad;
+	if (edad >= 18)
+	{
+		cout << "Mayor de edad" << endl;
+	}
+	else
+	{
+		cout << "Menor de edad" << endl;
+	}
+
+
+	// Preguntar al usuario cuantas horas ha trabajado el empleado durante la semana, si, el empleado trabajo más de 40 horas,
+		// el excedente de horas se multiplicará por 75 pesos y publicar este cálculo en pantalla que será el bono del empleado.
+	int horasTrabajando;
+	cout << "Cuántas horas trabaja? " << endl;
+	cin >> horasTrabajando;
+	
