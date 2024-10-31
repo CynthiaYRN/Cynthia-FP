@@ -1,0 +1,95 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    // Diseñar un programa que lea tres números A, B, C y visualice en pantalla el valor del más grande.
+
+    double A, B, C;
+    cout << "Ingrese A: ";
+    cin >> A;
+    cout << "Ingrese B: ";
+    cin >> B;
+    cout << "Ingrese C: ";
+    cin >> C;
+    if (A > B && A > C)
+    {
+        cout << "El valor más grande es A: " << A << endl;
+    }
+    else if (B > A && B > C)
+    {
+        cout << "El valor más grande es B: " << B << endl;
+    }
+    else {
+        cout << "El valor más grande es C: " << C << endl;
+    }
+
+
+    // Crear un programa que lea tres números diferentes, A, B, C, e imprime los valores máximo y mínimo.El procedimiento consistirá en comparaciones 
+    // sucesivas de parejas de números.Cree el algoritmo, diagrama de flujo y código en C#
+
+    double a, b, c;
+    cout << "Ingrese a: ";
+    cin >> a;
+    cout << "Ingrese b: ";
+    cin >> b;
+    cout << "Ingrese c: ";
+    cin >> c;
+    if (a > b && a > c)
+    {
+        cout << "MAX= " << a << endl;
+        cout << "MIN= " << b << endl;
+        cout << "MIN= " << c << endl;
+    }
+    else if (b > a && b > c)
+    {
+        cout << "MAX= " << b << endl;
+        cout << "MIN= " << a << endl;
+        cout << "MIN= " << c << endl;
+    }
+    else {
+        cout << "MAX= " << c << endl;
+        cout << "MIN= " << a << endl;
+        cout << "MIN= " << b << endl;
+    }
+    // Crear un programa al que le solicitemos la hora HH, MM, SS y nos calcule la hora dentro de un segundo más tarde.Leeremos las 
+    // horas minutos y segundos como números enteros.
+
+    int HH, MM, SS;
+    cout << "Escribe la hora (HH): ";
+    cin >> HH;
+    cout << "Escribe los minutos (MM): ";
+    cin >> MM;
+    cout << "Escribe los segundos (SS): ";
+    cin >> SS;
+    SS++;
+    if (SS == 60);
+    {
+        MM++;
+        SS = 0;
+    }
+    if (MM == 60);
+    {
+        HH++;
+        MM = 0;
+    }
+
+    cout << "Hora dentro de un segundo: " << HH << ":" << MM << ":" << SS << endl;
+
+    // Determinar el precio del boleto de ida y vuelta en avión, conociendo la distancia a recorrer y sabiendo que si el número de días de estancia es superior
+    // a 7 y la distancia superior a 800 km el billete tiene una reducción del 30 % .El precio por km es de 2.5 dólares.
+
+    double distancia, precio;
+    int dias;
+    cout << "Ingrese la distancia "
+            
+    // 1.20 Escribir las instrucciones apropiadas para cada una de las siguientes condiciones :
+    // a) Si un ángulo es igual a 90 grados, imprimir el mensaje "El ángulo es un ángulo recto" sino imprimir el mensaje "El ángulo no es un ángulo recto".
+    // b) Si la temperatura es superior a 100 grados, visualizar el mensaje “por encima del punto de ebullición del agua” sino visualizar el mensaje
+    // “por debajo del punto de ebullición del agua”.
+    // c) Recibir un número, Si este número es positivo, sumar el número a total de positivos usando una variable que acumule los números negativos, sino sumar 
+    // al total de negativos usando una variable que acumule los números negativos.
+    // d) Si “x” es mayor que “y”, y “z” es menor que “y”, imprimir “x”.
+    // e) Si la distancia es mayor que 20 y menos que 35, crear y leer un valor para luna variable de tipo entero llamada “tiempo”.
+}
+
