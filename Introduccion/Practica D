@@ -81,7 +81,12 @@ int main()
 
     double distancia, precio;
     int dias;
-    cout << "Ingrese la distancia "
+    cout << "Ingrese la distancia (km): ";
+    cin >> distancia;
+    cout << "Ingrese días de estancia: ";
+    cin >> dias;
+    if (dias > 7 && distancia > 800)
+        precio = distancia * 2.5 * 2 * .7;
             
     // 1.20 Escribir las instrucciones apropiadas para cada una de las siguientes condiciones :
     // a) Si un ángulo es igual a 90 grados, imprimir el mensaje "El ángulo es un ángulo recto" sino imprimir el mensaje "El ángulo no es un ángulo recto".
@@ -91,5 +96,3 @@ int main()
     // al total de negativos usando una variable que acumule los números negativos.
     // d) Si “x” es mayor que “y”, y “z” es menor que “y”, imprimir “x”.
     // e) Si la distancia es mayor que 20 y menos que 35, crear y leer un valor para luna variable de tipo entero llamada “tiempo”.
-}
-
