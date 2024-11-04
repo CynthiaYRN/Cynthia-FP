@@ -1,10 +1,12 @@
 #include <iostream>
+#include <string>
+#include <cmath>
 using namespace std;
 
 int main()
 {
 
-	/*1.21 Crear el código de un programa en C++ que pregunte si quiere salir del ciclo usando la
+    /*1.21 Crear el código de un programa en C++ que pregunte si quiere salir del ciclo usando la
       instrucción “do … while”, y leer un “string” donde el usuario tiene solo dos opciones para
       contestar. Si el usuario contesta “SI” entonces salir del ciclo, su contesta “NO” entonces
       volver a hacer la pregunta “Quieres salir del ciclo? [SI/NO]”. Ojo la contestación deben ser
@@ -37,15 +39,68 @@ int main()
       en cero y el usuario podrá hacer la siguiente operación, hasta que el usuario presione “s”
       de salir entonces terminará el programa.*/
 
+    char opcion;
+    int numero1, numero2, total = 0;
+    do {
+        cout << "Menu de operaciones aritmeticas" << endl;
+        cout << "a) Suma de dos operandos (+)" << endl;
+        cout << "b) Resta de dos operandos (-)" << endl;
+        cout << "c) Multiplicacion dos operandos (*)" << endl;
+        cout << "d) Division dos operandos (/)" << endl;
+        cout << "e) Residuo dos operandos (%)" << endl;
+        cout << "s) Salir" << endl;
+        cout << "Ingrese su opcion: ";
+        cin >> opcion;
+        if (opcion == 's')
+        {
+            break;
+        }
+            cout << "Ingrese el primer numero: ";
+            cin >> numero1;
+            cout << "Ingrese el segundo numero: ";
+            cin >> numero2;
+            switch (opcion) {
+            case 'a':
+                total = numero1 + numero2;
+                cout << "Resultado: " << total << endl;
+                break;
+            case 'b':
+                total = numero1 - numero2;
+                cout << "Resultado: " << total << endl;
+                break;
+            case 'c':
+                total = numero1 * numero2;
+                cout << "Resultado: " << total << endl;
+                break;
+            case 'd':
+                if (numero2 != 0) {
+                    total = numero1 / numero2;
+                    cout << "Resultado: " << total << endl;
+                }
+                else {
+                    cout << "Error: Division entre cero" << endl;
+                }
+                break;
+            case 'e':
+                total = numero1 % numero2;
+                cout << "Resultado: " << total << endl;
+                break;
+            default:
+                cout << "Opcion invalida" << endl;
+            }
+            numero1 = 0;
+            numero2 = 0;
+            total = 0;
+        } while (true);
 
-
+    
     /*1.23 Crear un programa en C++ que “simule” dos operaciones básicas de un cajero que es
       retiro y consulta de saldo, el proceso debe considerar la lectura y validación de banda
       magnética o chip*. Si la tarjeta es invalida, terminar el proceso usando la instrucción
       “break “de lo contrario pedir un pin de 4 dígitos, validar que solo sean 4 dígitos, el digito a
       validar será “1234” de lo contrario será pin invalido.
       Las opciones que deberá mostrar el cajero si el chip y el pin son válidos será:
-      
+
       Menu de operaciones cajero UNITEC
       a) Consulta de Saldo
       b) Retiro de Dinero
@@ -60,8 +115,69 @@ int main()
       Para la consulta, solo deberá mostrar el saldo y terminar la operación con el cajero.
     */
 
+    string bandaMagnetica;
+    const string PIN_CORRECTO = "1234";
+    string pinIngresado;
+    double saldo = 3450.00;
+    int opcion1;
 
+    cout << "Introduce la banda magnetica o chip: ";
+    cin >> bandaMagnetica;
 
+    if (bandaMagnetica != "valida") {
+        cout << "Tarjeta invalida. Fin del proceso." << endl;
+        
+    }
+
+    
+    cout << "Introduce tu PIN (4 digitos): ";
+    cin >> pinIngresado;
+
+    if (pinIngresado != PIN_CORRECTO) {
+        cout << "PIN invalido. Fin del proceso." << endl;
+        
+    }
+
+    while (true) {
+        cout << "\nMenu de operaciones cajero UNITEC" << endl;
+        cout << "a) Consulta de Saldo" << endl;
+        cout << "b) Retiro de Dinero" << endl;
+        cout << "c) Cancelar operacion" << endl;
+        cout << "Selecciona una opción (a, b, c): ";
+        char seleccion;
+        cin >> seleccion;
+
+        if (seleccion == 'a') {
+            
+            cout << "Saldo actual: " << saldo << " pesos." << endl;
+
+        }
+        else if (seleccion == 'b') {
+           
+            double cantidadRetiro;
+            cout << "Introduce la cantidad a retirar: ";
+            cin >> cantidadRetiro;
+
+          
+            if (cantidadRetiro > saldo) {
+                cout << "Fondos insuficientes." << endl;
+            }
+            else {
+                saldo -= cantidadRetiro;
+                cout << "Retiro exitoso. Saldo remanente: " << saldo << " pesos." << endl;
+            }
+
+        }
+        else if (seleccion == 'c') {
+         
+            cout << "Operacion cancelada. Fin del proceso." << endl;
+            break;
+
+        }
+        else {
+            cout << "Opcion inválida. Intenta de nuevo." << endl;
+        }
+    }
 
 
 
@@ -70,7 +186,7 @@ int main()
       posibles valores “izquierda” y “derecha”.
       La pista es una pista sin fin, con un tiempo inicial limitado a 12 unidades; la vida y el
       tiempo son uno solo concepto, cuando el tiempo se acaba, entonces, el juego también.
-      
+
       Se tienen dos modificadores del corredor, uno es un castigo, el otro es un premio, estos
       son totalmente aleatorios.
       En el caso de encontrar un obstáculo, este es generado de manera aleatoria con dos
@@ -86,7 +202,8 @@ int main()
       distancia alcanza 0 o un número negativo, el juego terminará.*/
 
 
-
+    
 
 
 }
+
