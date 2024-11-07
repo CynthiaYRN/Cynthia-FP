@@ -55,45 +55,45 @@ int main()
         {
             break;
         }
-            cout << "Ingrese el primer numero: ";
-            cin >> numero1;
-            cout << "Ingrese el segundo numero: ";
-            cin >> numero2;
-            switch (opcion) {
-            case 'a':
-                total = numero1 + numero2;
+        cout << "Ingrese el primer numero: ";
+        cin >> numero1;
+        cout << "Ingrese el segundo numero: ";
+        cin >> numero2;
+        switch (opcion) {
+        case 'a':
+            total = numero1 + numero2;
+            cout << "Resultado: " << total << endl;
+            break;
+        case 'b':
+            total = numero1 - numero2;
+            cout << "Resultado: " << total << endl;
+            break;
+        case 'c':
+            total = numero1 * numero2;
+            cout << "Resultado: " << total << endl;
+            break;
+        case 'd':
+            if (numero2 != 0) {
+                total = numero1 / numero2;
                 cout << "Resultado: " << total << endl;
-                break;
-            case 'b':
-                total = numero1 - numero2;
-                cout << "Resultado: " << total << endl;
-                break;
-            case 'c':
-                total = numero1 * numero2;
-                cout << "Resultado: " << total << endl;
-                break;
-            case 'd':
-                if (numero2 != 0) {
-                    total = numero1 / numero2;
-                    cout << "Resultado: " << total << endl;
-                }
-                else {
-                    cout << "Error: Division entre cero" << endl;
-                }
-                break;
-            case 'e':
-                total = numero1 % numero2;
-                cout << "Resultado: " << total << endl;
-                break;
-            default:
-                cout << "Opcion invalida" << endl;
             }
-            numero1 = 0;
-            numero2 = 0;
-            total = 0;
-        } while (true);
+            else {
+                cout << "Error: Division entre cero" << endl;
+            }
+            break;
+        case 'e':
+            total = numero1 % numero2;
+            cout << "Resultado: " << total << endl;
+            break;
+        default:
+            cout << "Opcion invalida" << endl;
+        }
+        numero1 = 0;
+        numero2 = 0;
+        total = 0;
+    } while (true);
 
-    
+
     /*1.23 Crear un programa en C++ que “simule” dos operaciones básicas de un cajero que es
       retiro y consulta de saldo, el proceso debe considerar la lectura y validación de banda
       magnética o chip*. Si la tarjeta es invalida, terminar el proceso usando la instrucción
@@ -126,16 +126,16 @@ int main()
 
     if (bandaMagnetica != "valida") {
         cout << "Tarjeta invalida. Fin del proceso." << endl;
-        
+
     }
 
-    
+
     cout << "Introduce tu PIN (4 digitos): ";
     cin >> pinIngresado;
 
     if (pinIngresado != PIN_CORRECTO) {
         cout << "PIN invalido. Fin del proceso." << endl;
-        
+
     }
 
     while (true) {
@@ -148,17 +148,17 @@ int main()
         cin >> seleccion;
 
         if (seleccion == 'a') {
-            
+
             cout << "Saldo actual: " << saldo << " pesos." << endl;
 
         }
         else if (seleccion == 'b') {
-           
+
             double cantidadRetiro;
             cout << "Introduce la cantidad a retirar: ";
             cin >> cantidadRetiro;
 
-          
+
             if (cantidadRetiro > saldo) {
                 cout << "Fondos insuficientes." << endl;
             }
@@ -169,7 +169,7 @@ int main()
 
         }
         else if (seleccion == 'c') {
-         
+
             cout << "Operacion cancelada. Fin del proceso." << endl;
             break;
 
@@ -202,7 +202,30 @@ int main()
       distancia alcanza 0 o un número negativo, el juego terminará.*/
 
 
-    
+    srand(time(NULL));
+    int castigo = 0;
+    int vida = 12;
+    int premio = 0;
+    cout << "vida inicial " << vida << endl;
+    while (vida > 0) {
+        //deducir una vida
+        vida--;
+        cout << "costo de clico: " << vida << endl;
+        //deducir castigo
+        castigo = rand() % 2;
+        if (castigo == 1)
+        {
+            vida = vida - 3;
+            cout << "castigo " << vida << endl;
+        }
+        premio = rand() % 2;
+        if (premio == 1)
+        {
+            cout << "premio " << vida << endl;
+        }
+        cout << "vida despues ciclo " << vida << endl;
+
+    }
 
 
 }
