@@ -1,0 +1,60 @@
+#include <iostream>
+#include <array>
+using namespace std;
+int main()
+
+{
+	/* Generar el código necesario en C++ para declarar un arreglo que contenga los nombres de los meses del año y asignar dichos
+	valores a cada posición. Tip : Usar tipo de variable “string” y asina el nombre a cada posición relativa, es decir la posición
+	cero corresponde a “enero”, la posición relativa uno corresponde a “febrero” etc. */
+
+	string meses[12];
+
+	meses[0] = "ENERO";
+	meses[1] = "FEBRERO";
+	meses[2] = "MARZO";
+	meses[3] = "ARBIL";
+	meses[4] = "MAYO";
+	meses[5] = "JUNIO";
+	meses[6] = "JULIO";
+	meses[7] = "AGOSTO";
+	meses[8] = "SEPTIEMBRE";
+	meses[9] = "OCTUBRE";
+	meses[10] = "NOVIEMBRE";
+	meses[11] = "DICIEMBRE";
+
+
+	/* Imprime el arreglo usando la instrucción “for” usando el índice y accesa el arreglo meses e imprime los valores del arreglo, debe imprimir “enero”, “febrero”, etc. */
+
+
+	for (int i = 0; i < 12; i++)
+	{
+		cout << meses[i] << endl;
+	}
+
+	/* Generar el código necesario en C++ para declarar un arreglo que contenga los nombres de los planetas del sistema solar y asignar dichos
+	valores a cada posición. Tip : Usar tipo de variable “string” y asina el nombre a cada posición relativa, es decir la posición cero corresponde a
+	“mercurio”, la posición relativa uno corresponde a “venus” etc. */
+
+	string planetas[8];
+	planetas[0] = "MERCURIO";
+	planetas[1] = "VENUS";
+	planetas[2] = "TIERRA";
+	planetas[3] = "MARTE";
+	planetas[4] = "JUPITER";
+	planetas[5] = "SATURNO";
+	planetas[6] = "URANO";
+	planetas[7] = "NEPTUNO";
+	
+
+		/* Imprime el arreglo usando la instrucción “for” usando el índice y accesa el arreglo planetas e imprime los valores del arreglo, debe imprimir “enero”, “febrero”, etc. */
+
+	for (int i = 0; i < 8; i++)
+	{
+		cout << planetas[i] << endl;
+	}
+
+
+
+}
+
