@@ -10,6 +10,8 @@ int main()
 
 	// Dimensión de 8x8 con 64 casillas.
 
+
+
 	/*¿Que es una diferencia entre los colores HTML y los colores RGB? ¿Son equivalentes? */
 
 	// Colores HTML: Expresado en formato de 3 digitos como #F00 y representado en códigos hexadecimales de 6 dígitos.
@@ -17,13 +19,33 @@ int main()
 	//Equivalencia: Los códigos de HTML pueden ser convertidos a valores RGB equivalentes.
 
 
+
 	/*¿Cuál sería el código del color azul medianoche en HTML y RGB? */
 
 	// HTML: #191970 y en RGB: (25, 25, 112). 
+
+
 
 	/*Documentar como hacer la suma y multiplicación de matrices. Describe un pequeño proceso, para la 
 	multiplicación y suma de matrices de dimensión de 2x2. Y pon un ejemplo, si lo tomas de algún libro de 
 	matemáticas o internet, cita la fuente. */
 
+	// Se suman los elementos que se encuentran en la misma posición de ambas mátrices.
+	// A= |1 2|      B= |5 6|
+	//    |3 4|         |7 8|
+	// C= A+B = |6   8|
+	//          |10 12|
+	
 
+
+	
+	// Para hacer una multiplicación de matrices, el número de columnas de la primera matriz debe ser igual al número de filas de la segunda matriz.
+	// A= |1 2|     B= |5 6|
+	//    |3 4|        |7 8|
+	// C= AB = |19 22|
+	//         |43 50|
+
+
+	// Referencia
+	// Lay, D.C. (2012). Álgebra Lineal y Geometría. Pearson Educación.
 }
