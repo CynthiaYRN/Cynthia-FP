@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	/*El juego sudoku es muy famoso, y es una matriz. ¿De que dimensión es y cuantas casillas tiene? */
+
+	// Su dimensión es de 9x9 con 81 casillas.
+
+	/*El juego de ajedrez otro juego super famoso y antiguo. ¿De que dimensión es su tablero y cuantas casillas tiene? */
+
+	// Dimensión de 8x8 con 64 casillas.
+
+	/*¿Que es una diferencia entre los colores HTML y los colores RGB? ¿Son equivalentes? */
+
+	// Colores HTML: Expresado en formato de 3 digitos como #F00 y representado en códigos hexadecimales de 6 dígitos.
+	//Colores RGB: Se expresa en formato de porcentaje como RGB (225, 225, 0) y se representa en valores de intensidad para rojo, verde y azul.
+	//Equivalencia: Los códigos de HTML pueden ser convertidos a valores RGB equivalentes.
+
+
+	/*¿Cuál sería el código del color azul medianoche en HTML y RGB? */
+
+	// HTML: #191970 y en RGB: (25, 25, 112). 
+
+	/*Documentar como hacer la suma y multiplicación de matrices. Describe un pequeño proceso, para la 
+	multiplicación y suma de matrices de dimensión de 2x2. Y pon un ejemplo, si lo tomas de algún libro de 
+	matemáticas o internet, cita la fuente. */
+
+
+}
