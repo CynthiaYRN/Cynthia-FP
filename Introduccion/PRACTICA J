@@ -35,11 +35,11 @@ int main()
     /* #4 Realice el programa en C++ calcule el promedio de los elementos de un arreglo
         de tipo entero.Utilice el arreglo preconstruido. */
 
-    const int tam1 = 10;
-    int arreglo0[tam1] = { 3, 5, 2, 8, 1, 9, 4, 7, 6, 0 };
+    const int tam = 10;
+    int arreglo[tam] = { 3, 5, 2, 8, 1, 9, 4, 7, 6, 0 };
     int suma = 0;
     for (int i = 0; i < tam; i++) {
-        suma += arreglo0[i];
+        suma += arreglo[i];
     }
     double promedio = (double)suma / tam;
     cout << "Promedio: " << promedio << endl;
@@ -47,16 +47,16 @@ int main()
     /* #5 Realice el programa en C++ que encuentre el segundo mayor elemento de un
         arreglo.Utilice arreglo preconstruido. */
 
-    const int tam2 = 10;
-    int arreglo2[tam2] = { 3, 5, 2, 8, 1, 9, 4, 7, 6, 0 };
-    int mayor = arreglo2[0], segundoMayor = INT_MIN;
+    const int tam = 10;
+    int arreglo[tam] = { 3, 5, 2, 8, 1, 9, 4, 7, 6, 0 };
+    int mayor = arreglo[0], segundoMayor = INT_MIN;
     for (int i = 1; i < tam2; i++) {
-        if (arreglo2[i] > mayor) {
+        if (arreglo[i] > mayor) {
             segundoMayor = mayor;
-            mayor = arreglo2[i];
+            mayor = arreglo[i];
         }
-        else if (arreglo2[i] > segundoMayor) {
-            segundoMayor = arreglo2[i];
+        else if (arreglo[i] > segundoMayor) {
+            segundoMayor = arreglo[i];
         }
     }
     cout << "Segundo mayor elemento: " << segundoMayor << endl;
@@ -65,10 +65,10 @@ int main()
         impares de un arreglo preconstruido. */
 
     const int numer0 = 10;
-    int arreglo3[numer0] = { 3, 5, 2, 8, 1, 9, 4, 7, 6, 0 };
+    int arreglo[numer0] = { 3, 5, 2, 8, 1, 9, 4, 7, 6, 0 };
     int pares = 0, impares = 0;
     for (int i = 0; i < numer0; i++) {
-        if (arreglo3[i] % 2 == 0) {
+        if (arreglo[i] % 2 == 0) {
             pares++;
         }
         else {
@@ -82,7 +82,7 @@ int main()
         solicitado hasta 10 veces. */
 
     int numero;
-    cout << "Ingrese un número: ";
+    cout << "Ingrese un numero: ";
     cin >> numero;
     for (int i = 1; i <= 10; i++) {
         cout << numero << " x " << i << " = " << numero * i << endl;
@@ -92,25 +92,25 @@ int main()
         arreglo de 1000 elementos generados de forma aleatoria de tipo entero.Utilice el arreglo
         preconstruido. */
 
-    const int tam3 = 1000;
-    int arreglo4[tam3];
+    const int tam = 1000;
+    int arreglo[tam];
     srand(time(0));
-    for (int i = 0; i < tam3; i++) {
-        arreglo4[i] = rand() % 100;
+    for (int i = 0; i < tam; i++) {
+        arreglo[i] = rand() % 100;
     }
     int mayor1 = INT_MIN, mayor2 = INT_MIN, mayor3 = INT_MIN;
-    for (int i = 0; i < tam3; i++) {
+    for (int i = 0; i < tam; i++) {
         if (arreglo[i] > mayor1) {
             mayor3 = mayor2;
             mayor2 = mayor1;
             mayor1 = arreglo[i];
         }
-        else if (arreglo4[i] > mayor2) {
+        else if (arreglo[i] > mayor2) {
             mayor3 = mayor2;
             mayor2 = arreglo[i];
         }
-        else if (arreglo4[i] > mayor3) {
-            mayor3 = arreglo4[i];
+        else if (arreglo[i] > mayor3) {
+            mayor3 = arreglo[i];
         }
 
     /* #9 Realice el programa en C++ que encuentre el segundo menor elemento de un
@@ -118,18 +118,18 @@ int main()
         preconstruido. */
 
         const int Tam = 1000;
-        double Arreglo9[tam];
+        double Arreglo[tam];
         srand(time(0));
         for (int i = 0; i < Tam; i++) {
-            Arreglo9[i] = (double)rand() / RAND_MAX * 100; // Genera números aleatorios entre 0 y 100
+            Arreglo[i] = (double)rand() / RAND_MAX * 100; // Genera números aleatorios entre 0 y 100
         }
-        double menor = Arreglo9[0], segundoMenor = DBL_MAX;
+        double menor = Arreglo[0], segundoMenor = DBL_MAX;
         for (int i = 1; i < Tam; i++) {
-            if (Arreglo9[i] < menor) {
+            if (Arreglo[i] < menor) {
                 segundoMenor = menor;
                 menor = Arreglo9[i];
             }
-            else if (Arreglo9[i] < segundoMenor) {
+            else if (Arreglo[i] < segundoMenor) {
                 segundoMenor = arreglo[i];
             }
         }
@@ -147,9 +147,9 @@ int main()
         cout << endl;
         int izquierda = 0, derecha = taM - 1;
         while (izquierda < derecha) {
-            int temp = arreglO[izquierda];
-            arreglO[izquierda] = arreglo[derecha];
-            arreglO[derecha] = temp;
+            int temp = arreglo[izquierda];
+            arreglo[izquierda] = arreglo[derecha];
+            arreglo[derecha] = temp;
             izquierda++;
             derecha--;
         }
