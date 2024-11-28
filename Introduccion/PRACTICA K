@@ -1,0 +1,77 @@
+#include <iostream>
+using namespace std;
+
+// área de un cuadrado
+double areaCuadrado(double lado) {
+    return lado * lado;
+}
+
+// área de un rectángulo
+double areaRectangulo(double base, double altura) {
+    return base * altura;
+}
+
+// área de un círculo
+double areaCirculo(double radio) {
+    return 3.14 * radio * radio;
+}
+
+// área de un triángulo
+double areaTriangulo(double base, double altura) {
+    return 0.5 * base * altura;
+}
+
+// área de un rombo
+double areaRombo(double diagonal1, double diagonal2) {
+    return 0.5 * diagonal1 * diagonal2;
+}
+
+int main() {
+    int opcion;
+    double lado, base, altura, radio, diagonal1, diagonal2;
+
+    cout << "Seleccione la figura geométrica para calcular su area:" << endl;
+    cout << "1. Cuadrado" << endl;
+    cout << "2. Rectángulo" << endl;
+    cout << "3. Círculo" << endl;
+    cout << "4. Triángulo" << endl;
+    cout << "5. Rombo" << endl;
+    cin >> opcion;
+
+    switch (opcion) {
+    case 1:
+        cout << "Ingrese el lado del cuadrado: ";
+        cin >> lado;
+        cout << "El área del cuadrado es: " << areaCuadrado(lado) << endl;
+        break;
+    case 2:
+        cout << "Ingrese la base del rectángulo: ";
+        cin >> base;
+        cout << "Ingrese la altura del rectángulo: ";
+        cin >> altura;
+        cout << "El área del rectángulo es: " << areaRectangulo(base, altura) << endl;
+        break;
+    case 3:
+        cout << "Ingrese el radio del círculo: ";
+        cin >> radio;
+        cout << "El área del círculo es: " << areaCirculo(radio) << endl;
+        break;
+    case 4:
+        cout << "Ingrese la base del triángulo: ";
+        cin >> base;
+        cout << "Ingrese la altura del triángulo: ";
+        cin >> altura;
+        cout << "El área del triángulo es: " << areaTriangulo(base, altura) << endl;
+        break;
+    case 5:
+        cout << "Ingrese la diagonal 1 del rombo: ";
+        cin >> diagonal1;
+        cout << "Ingrese la diagonal 2 del rombo: ";
+        cin >> diagonal2;
+        cout << "El área del rombo es: " << areaRombo(diagonal1, diagonal2) << endl;
+        break;
+    default:
+        cout << "Opción inválida." << endl;
+        break;
+    }
+}
