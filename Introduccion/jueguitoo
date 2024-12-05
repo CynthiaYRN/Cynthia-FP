@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string>
+using namespace std;
+//clase, se declaran fuera de cualquier función
+
+class jugador {
+public:
+	string id;
+	int vida;
+	int potencia;
+	jugador(string id1, int vida1, int potencia1)
+	{
+		this->id = id1;
+		this->vida = vida1;
+		this->potencia = potencia1;
+	}
+	string getId()const
+	{
+		return id;
+	}
+	int getVida()const
+	{
+		return vida;
+	}
+	int getPotencia()const
+	{
+		return potencia;
+	}
+};
+
+int main()
+{
+	jugador link("Link ", 100, 20);
+	cout << "Nombre: " << link.getId();
+	cout << "vida: " << link.getVida();
+	cout << "Potencia: " << link.getPotencia();
+}
+
