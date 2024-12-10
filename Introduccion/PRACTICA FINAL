@@ -270,9 +270,407 @@ namespace ConsoleApp4
 
 
             // PRACTICA D
+            // Diseñar un programa que lea tres números A, B, C y visualice en pantalla el valor del más grande.
+            Console.Write("Ingrese A: ");
+            double A = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Ingrese B: ");
+            double B = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Ingrese C: ");
+            double C = Convert.ToDouble(Console.ReadLine());
+
+            if (A > B && A > C)
+            {
+                Console.WriteLine("El valor más grande es A: " + A);
+            }
+            else if (B > A && B > C)
+            {
+                Console.WriteLine("El valor más grande es B: " + B);
+            }
+            else
+            {
+                Console.WriteLine("El valor más grande es C: " + C);
+            }
+
+            // Crear un programa que lea tres números diferentes, A, B, C, e imprime los valores máximo y mínimo.
+            Console.Write("Ingrese a: ");
+            double aa = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Ingrese b: ");
+            double bb = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Ingrese c: ");
+            double c = Convert.ToDouble(Console.ReadLine());
+
+            if (aa > bb && aa > c)
+            {
+                Console.WriteLine("MAX= " + aa);
+                Console.WriteLine("MIN= " + Math.Min(bb, c));
+            }
+            else if (bb > aa && bb > c)
+            {
+                Console.WriteLine("MAX= " + bb);
+                Console.WriteLine("MIN= " + Math.Min(aa, c));
+            }
+            else
+            {
+                Console.WriteLine("MAX= " + c);
+                Console.WriteLine("MIN= " + Math.Min(aa, bb));
+            }
+
+            {
+                // Crear un programa al que le solicitemos la hora HH, MM, SS y nos calcule la hora dentro de un segundo más tarde.
+                Console.Write("Escribe la hora (HH): ");
+                int HH = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Escribe los minutos (MM): ");
+                int MM = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Escribe los segundos (SS): ");
+                int SS = Convert.ToInt32(Console.ReadLine());
+                SS++;
+                if (SS == 60)
+                {
+                    MM++;
+                    SS = 0;
+                }
+                if (MM == 60)
+                {
+                    HH++;
+                    MM = 0;
+                }
+                Console.WriteLine("Hora dentro de un segundo: " + HH + ":" + MM + ":" + SS);
+
+                // Determinar el precio del boleto de ida y vuelta en avión.
+                Console.Write("Ingrese la distancia (km): ");
+                double distancia = Convert.ToDouble(Console.ReadLine());
+                Console.Write("Ingrese dias de estancia: ");
+                int dias = Convert.ToInt32(Console.ReadLine());
+                double precio;
+                if (dias > 7 && distancia > 800)
+                    precio = distancia * 2.5 * 2 * 0.7;
+                else
+                    precio = distancia * 2.5 * 2;
+                Console.WriteLine("Precio del boleto de ida y vuelta: $" + precio);
+
+                // a) Si un ángulo es igual a 90 grados, imprimir el mensaje "El ángulo es un ángulo recto".
+                Console.Write("Ingrese angulo: ");
+                int angulo = Convert.ToInt32(Console.ReadLine());
+                if (angulo == 90)
+                {
+                    Console.WriteLine("El angulo es un angulo recto");
+                }
+                else
+                {
+                    Console.WriteLine("El angulo no es un angulo recto");
+                }
+
+                // b) Si la temperatura es superior a 100 grados, visualizar el mensaje “por encima del punto de ebullición del agua”.
+                Console.Write("Ingrese temperatura: ");
+                double temperatura = Convert.ToDouble(Console.ReadLine());
+                if (temperatura > 100)
+                {
+                    Console.WriteLine("Por encima del punto de ebullicion del agua");
+                }
+                else
+                {
+                    Console.WriteLine("Por debajo del punto de ebullicion del agua");
+                }
+
+                // c) Recibir un número, Si este número es positivo, sumar el número a total de positivos.
+                double numeroUno, positivo = 6, negativo = -11;
+                Console.WriteLine("Positivo tiene actualmente 6 y negativo -11");
+                Console.Write("Ingrese un numero: ");
+                numeroUno = Convert.ToDouble(Console.ReadLine());
+                if (numeroUno > 0)
+                {
+                    Console.WriteLine("Positivo: " + (positivo + numeroUno));
+                }
+                else
+                {
+                    Console.WriteLine("Negativo: " + (negativo + numeroUno));
+                }
+
+                // d) Si “x” es mayor que “y”, y “z” es menor que “y”, imprimir “x”.
+                Console.Write("Ingrese x: ");
+                int xx = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Ingrese y: ");
+                int y = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Ingrese z: ");
+                int z = Convert.ToInt32(Console.ReadLine());
+                if (xx > y && z < y)
+                {
+                    Console.WriteLine(xx);
+                }
+                else
+                {
+                    Console.WriteLine("No cumple");
+                }
+
+                // e) Si la distancia es mayor que 20 y menos que 35, crear y leer un valor para una variable de tipo entero llamada “tiempo”.
+                Console.Write("Ingrese distancia: ");
+                int distancia1 = Convert.ToInt32(Console.ReadLine());
+                if (distancia1 > 20 && distancia1 < 35)
+                {
+                    Console.Write("Ingrese tiempo: ");
+                    int tiempo = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Tiempo: " + tiempo);
+                }
+
+                // PRACTICA E
+                string respuesta;
+                do
+                {
+                    Console.WriteLine("Quieres salir del ciclo? [SI/NO]");
+                    respuesta = Console.ReadLine().ToUpper();
+                    while (respuesta != "SI" && respuesta != "NO")
+                    {
+                        Console.WriteLine("Opcion invalida. Por favor, ingresa SI o NO.");
+                        respuesta = Console.ReadLine().ToUpper();
+                    }
+                } while (respuesta != "SI");
+                Console.WriteLine("Has salido del curso.");
+                {
+                    string bandaMagnetica;
+                    const string PIN_CORRECTO = "1234";
+                    string pinIngresado;
+                    double saldo = 3450.00;
+
+                    Console.Write("Introduce la banda magnetica o chip: ");
+                    bandaMagnetica = Console.ReadLine();
+
+                    if (bandaMagnetica != "valida")
+                    {
+                        Console.WriteLine("Tarjeta invalida. Fin del proceso.");
+                        return;
+                    }
+
+                    Console.Write("Introduce tu PIN (4 digitos): ");
+                    pinIngresado = Console.ReadLine();
+
+                    if (pinIngresado != PIN_CORRECTO)
+                    {
+                        Console.WriteLine("PIN invalido. Fin del proceso.");
+                        return;
+                    }
+
+                    while (true)
+                    {
+                        Console.WriteLine("\nMenu de operaciones cajero UNITEC");
+                        Console.WriteLine("a) Consulta de Saldo");
+                        Console.WriteLine("b) Retiro de Dinero");
+                        Console.WriteLine("c) Cancelar operacion");
+                        Console.Write("Selecciona una opción (a, b, c): ");
+                        char seleccion = Console.ReadKey().KeyChar;
+                        Console.WriteLine();
+
+                        if (seleccion == 'a')
+                        {
+                            Console.WriteLine("Saldo actual: " + saldo + " pesos.");
+                        }
+                        else if (seleccion == 'b')
+                        {
+                            Console.Write("Introduce la cantidad a retirar: ");
+                            double cantidadRetiro;
+                            if (double.TryParse(Console.ReadLine(), out cantidadRetiro))
+                            {
+                                if (cantidadRetiro > saldo)
+                                {
+                                    Console.WriteLine("Fondos insuficientes.");
+                                }
+                                else
+                                {
+                                    saldo -= cantidadRetiro;
+                                    Console.WriteLine("Retiro exitoso. Saldo remanente: " + saldo + " pesos.");
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("Cantidad inválida.");
+                            }
+                        }
+                        else if (seleccion == 'c')
+                        {
+                            Console.WriteLine("Operacion cancelada. Fin del proceso.");
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opcion inválida. Intenta de nuevo.");
+                        }
+                    }
+
+                }
+
+            }
+            
+            
+            {
+                Random aleatorio = new Random();
+                int castigo = 0;
+                int vida = 12;
+                int premio = 0;
+
+                Console.WriteLine("Vida inicial: " + vida);
+
+                while (vida > 0)
+                {
+                    // Deducir una vida
+                    vida--;
+                    Console.WriteLine("Costo de ciclo: " + vida);
+
+                    // Deducir castigo
+                    castigo = aleatorio.Next(2);
+                    if (castigo == 1)
+                    {
+                        vida -= 3;
+                        Console.WriteLine("Castigo: " + vida);
+                    }
+
+                    // Premio
+                    premio = aleatorio.Next(2);
+                    if (premio == 1)
+                    {
+                        vida += 3;
+                        Console.WriteLine("Premio: " + vida);
+                    }
+
+                    Console.WriteLine("Vida después del ciclo: " + vida);
+
+                    // Salir del juego con la tecla Escape
+                    if (Console.KeyAvailable && Console.ReadKey(true).Key == ConsoleKey.Escape)
+                    {
+                        break;
+                    }
+                }
+
+                Console.WriteLine("Juego terminado.");
+            }
 
 
+
+            // PRACTICA F
+            {
+                // Imprimir números del 0 al 9
+                for (int i = 0; i <= 9; i++)
+                {
+                    Console.Write(i + " , ");
+                }
+                Console.WriteLine();
+
+                // Imprimir números del 9 al 0
+                for (int i = 9; i >= 0; i--)
+                {
+                    Console.Write(i + " , ");
+                }
+                Console.WriteLine();
+
+                // Imprimir números del 1 al 99
+                for (int i = 1; i <= 99; i++)
+                {
+                    Console.Write(i + " , ");
+                }
+                Console.WriteLine();
+
+                // Imprimir números pares del 2 al 100
+                for (int i = 2; i <= 100; i++)
+                {
+                    if (i % 2 == 0)
+                    {
+                        Console.Write(i + " , ");
+                    }
+                }
+                Console.WriteLine();
+
+                // Imprimir números secuenciales según rango ingresado
+                Console.Write("Ingrese el número mínimo: ");
+                int minimo = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Ingrese el número máximo: ");
+                int maximo = Convert.ToInt32(Console.ReadLine());
+                for (int i = minimo; i <= maximo; i++)
+                {
+                    Console.Write(i + " , ");
+                }
+                Console.WriteLine();
+
+                // Imprimir números secuenciales regresivos según rango ingresado
+                Console.Write("Ingrese el número mínimo: ");
+                int min = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Ingrese el número máximo: ");
+                int max = Convert.ToInt32(Console.ReadLine());
+                for (int i = max; i >= min; i--)
+                {
+                    Console.Write(i + " ");
+                }
+                Console.WriteLine();
+            }
+
+            // PRACTICA G
+            {
+                // Declarar y asignar valores al arreglo de meses
+                string[] meses = new string[12];
+                meses[0] = "ENERO";
+                meses[1] = "FEBRERO";
+                meses[2] = "MARZO";
+                meses[3] = "ABRIL";
+                meses[4] = "MAYO";
+                meses[5] = "JUNIO";
+                meses[6] = "JULIO";
+                meses[7] = "AGOSTO";
+                meses[8] = "SEPTIEMBRE";
+                meses[9] = "OCTUBRE";
+                meses[10] = "NOVIEMBRE";
+                meses[11] = "DICIEMBRE";
+
+                // Imprimir el arreglo de meses
+                for (int i = 0; i < 12; i++)
+                {
+                    Console.WriteLine(meses[i]);
+                }
+
+                // Declarar y asignar valores al arreglo de planetas
+                string[] planetas = new string[8];
+                planetas[0] = "MERCURIO";
+                planetas[1] = "VENUS";
+                planetas[2] = "TIERRA";
+                planetas[3] = "MARTE";
+                planetas[4] = "JUPITER";
+                planetas[5] = "SATURNO";
+                planetas[6] = "URANO";
+                planetas[7] = "NEPTUNO";
+
+                // Imprimir el arreglo de planetas
+                for (int i = 0; i < 8; i++)
+                {
+                    Console.WriteLine(planetas[i]);
+                }
+            }
+
+
+
+            // PRACTICA I
+            // Arreglo bidimensional
+            int[,] matriz = new int[9, 9]
+            {
+            {0, 3, 0, 0, 0, 0, 0, 0, 0},
+            {0, 2, 0, 9, 0, 6, 3, 0, 0},
+            {0, 6, 0, 4, 0, 2, 0, 9, 0},
+            {1, 0, 0, 0, 9, 0, 4, 0, 0},
+            {0, 0, 8, 1, 0, 3, 5, 0, 0},
+            {0, 0, 5, 0, 7, 0, 0, 0, 3},
+            {0, 5, 0, 3, 0, 1, 0, 6, 0},
+            {0, 0, 4, 6, 0, 7, 0, 3, 0},
+            {0, 0, 0, 0, 0, 0, 0, 8, 0}
+            };
+
+            // Imprimir matriz
+            for (int i = 0; i < 9; i++)
+            {
+                for (int j = 0; j < 9; j++)
+                {
+                    Console.Write(matriz[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
 
         }
     }
 }
+
+
+
