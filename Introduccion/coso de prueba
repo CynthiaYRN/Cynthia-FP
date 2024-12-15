@@ -1,0 +1,75 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	int numero, suma = 0;
+	while (true)
+	{
+		cout << "ingrese un numero: " << endl;
+		cin >> numero;
+		if (numero <= 0)
+		{
+			break;
+		}
+		suma += numero;
+	}
+	cout << "la suma es: " << suma << endl;
+
+
+
+	char operador;
+	int num1, num2;
+	cout << "ingrese algun operador: + - / *" << endl;
+	cin >> operador;
+	cout << "Agrega un numero: " << endl;
+	cin >> num1;
+	cout << "Agrega otro numero; " << endl;
+	cin >> num2;
+	switch (operador)
+	{
+	case '+':
+		{
+			cout << num1 << "+" << num2 << "= " << num1 + num2 << endl;
+		}
+		break;
+	case '-':
+		{
+			cout << num1 << "-" << num2 << "= " << num1 - num2 << endl;
+		}
+		break;
+	case '/':
+		{
+			cout << num1 << "/" << num2 << "= " << num1 / num2 << endl;
+		}
+		break;
+	case '*':
+		{
+			cout << num1 << "*" << num2 << "= " << num1 * num2 << endl;
+		}
+		break;
+		default: cout << "Error" << endl;
+		break;
+	}
+	string meses[12];
+
+	meses[0] = "ENERO";
+	meses[1] = "FEBRERO";
+	meses[2] = "MARZO";
+	meses[3] = "ARBIL";
+	meses[4] = "MAYO";
+	meses[5] = "JUNIO";
+	meses[6] = "JULIO";
+	meses[7] = "AGOSTO";
+	meses[8] = "SEPTIEMBRE";
+	meses[9] = "OCTUBRE";
+	meses[10] = "NOVIEMBRE";
+	meses[11] = "DICIEMBRE";
+	for (int i = 0; i < 12; i++)
+	{
+		cout << meses[i] << endl;
+	}
+}
+
+
