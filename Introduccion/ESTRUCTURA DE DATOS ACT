@@ -1,0 +1,37 @@
+/*-----------------------------------LIBRERIAS T MACROS---------------------------------------*/
+#include <iostream>
+using namespace std;
+/*-----------------------------------VARIABLES GLOBALES---------------------------------------*/
+/*-----------------------------------Prototipo de Funcion---------------------------------------*/
+int MaxBetweenTwoNumbers(int n1, int n2)
+{
+    /* Esta instruccion se encarga de encontrar el numero mayor por medio de una comprobacion con if..else.
+    La variable max sirve para almacenar el numeromayor segun el resultado de la comprobacion.*/
+   
+   int max = 0;
+    if (n1 > n2)
+    {
+        max = n1;
+    }
+    else
+    {
+        max = n2;
+    }
+    return max;
+}
+
+int main()
+{
+    /*-----------------------------------VARIABLES LOCALES---------------------------------------*/
+    int n1, n2;
+    cout << "Digite el primer numero: ";
+    cin >> n1;
+
+    cout << "Digite el segundo numero: ";
+    cin >> n2;
+
+    cout << "El mayor es: " <<
+        MaxBetweenTwoNumbers(n1, n2) << endl; /*Se llama a la funcion desde su ubicación, y arroja el resultado de sus instrucciones*/
+}
+/*-----------------------------------DEFINICIÓN DE FUNCIONES---------------------------------------*/
+
